@@ -4,9 +4,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>@View.Title</title>
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Sencha/resources/css/ext-touch.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Styles/Styles.css")" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="@Url.Content("~/Content/Sencha/ext-touch.js")"></script>
+	 @RenderSection("ScriptContent", optional: true)
 </head>
-
+<!--
 <body>
     <div class="page">
 
@@ -36,4 +39,5 @@
         </div>
     </div>
 </body>
+-->
 </html>
